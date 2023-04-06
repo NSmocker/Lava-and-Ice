@@ -273,6 +273,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6232745470614056083, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_TrackingStateInput.m_Action.m_Id
+      value: e6213275-2d9c-4cc6-a63e-5c2f8b616e75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232745470614056083, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_TrackingStateInput.m_Action.m_Name
+      value: Tracking State Input
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3413953552303518521, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
     - {fileID: 1915106583934579566, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}

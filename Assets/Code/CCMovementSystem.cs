@@ -31,6 +31,7 @@ public class CCMovementSystem : MonoBehaviour
     public Transform head_object;
     public float head_old_y, head_new_y;
     public float head_delta;
+    public float minimum_delta_for_jump=0.15f;
 
 
 
@@ -53,7 +54,7 @@ public class CCMovementSystem : MonoBehaviour
         head_new_y = head_object.transform.localPosition.y;
         head_delta =  (head_new_y - head_old_y)*10;
         head_old_y = head_object.transform.localPosition.y; ;
-        if (head_delta > 0.3) 
+        if (head_delta > minimum_delta_for_jump) 
         {
             MakeJump();
         }
@@ -70,7 +71,7 @@ public class CCMovementSystem : MonoBehaviour
         old_right_local_pos = new_right_local_pos;
 
         middle_delta = (left_hand_delta + right_hand_delta) / 2;
-        hitbox.center = Camera.main.transform.localPosition - new Vector3(0, hitbox.height/2 ,0);
+       // hitbox.center = Camera.main.transform.localPosition - new Vector3(0, hitbox.height/2 ,0);
         MakeStep();
 
     }
@@ -113,7 +114,7 @@ public class CCMovementSystem : MonoBehaviour
         CheckHeadJumping();
         
         ApplyGravity();
-        RecenterHitboxByHeadTrackable();
+      //  RecenterHitboxByHeadTrackable();
     }
 
 }
