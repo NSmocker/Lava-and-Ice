@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrackablesLibrary : MonoBehaviour
+public class DirectionPointer : MonoBehaviour
 {
-    public PlayerSystem master_system;
-    public Transform eyes_trackable, left_hand_trackable, right_hand_trackable;
+    public TrackablesLibrary trackables_library;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,7 @@ public class TrackablesLibrary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var new_angle = new Vector3(0, trackables_library.eyes_trackable.transform.eulerAngles.y, 0);
+        transform.eulerAngles = new_angle;
     }
 }

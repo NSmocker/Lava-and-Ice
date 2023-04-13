@@ -16,12 +16,17 @@ public class GroundCheckSystem : MonoBehaviour
         layer_mask = LayerMask.GetMask("Default");
     }
 
+
+    public void RecenterGroundedSystem(Vector3 new_position) 
+    {
+        transform.position = new_position;
+    }
     // Update is called once per frame
     void Update()
     {
        
         RaycastHit hit_info;
-        is_grounded = Physics.SphereCast(visual_model.transform.position + offset, hitbox.radius, Vector3.down, out hit_info, 1,layer_mask);
+        is_grounded = Physics.SphereCast(transform.position + offset, hitbox.radius, Vector3.down, out hit_info, 1,layer_mask);
         hit_point.gameObject.SetActive(is_grounded);
         if (is_grounded) 
         {

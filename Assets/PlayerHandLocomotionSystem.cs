@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerXRLocomotionSystem : MonoBehaviour
 {
 
-
+    public PlayerSystem master_system;
 
     [Header("Hands Movement")]
     public Transform left_hand_trackable;
@@ -25,6 +25,8 @@ public class PlayerXRLocomotionSystem : MonoBehaviour
     public float head_delta;
     public float minimum_delta_for_jump = 0.15f;
 
+    [Header("Other")]
+    public DirectionPointer direction_pointer;
 
     void CheckHeadJumping()
     {
@@ -33,7 +35,10 @@ public class PlayerXRLocomotionSystem : MonoBehaviour
         head_old_y = head_object.transform.localPosition.y; ;
         if (head_delta > minimum_delta_for_jump)
         {
-           // MakeJump();
+            if (master_system.character_to_controll != null) 
+            {
+                master_system.character_to_controll.movement_system.MakeJump();
+            } // MakeJump();
         }
     }
     void CheckArmSwingAmplitude()
@@ -48,8 +53,16 @@ public class PlayerXRLocomotionSystem : MonoBehaviour
         old_right_local_pos = new_right_local_pos;
 
         middle_delta = (left_hand_delta + right_hand_delta) / 2;
-        // hitbox.center = Camera.main.transform.localPosition - new Vector3(0, hitbox.height/2 ,0);
-        
+
+        if (CanRun) 
+        {
+            if (master_system.character_to_controll != null) 
+            {
+
+                master_system.character_to_controll.movement_system.MakeStep(direction_pointer.transform.forward*middle_delta);
+            }
+
+        }
     }
 
     // Start is called before the first frame update

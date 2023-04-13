@@ -39,10 +39,10 @@ public class CCMovementSystem : MonoBehaviour
         if (jump_force == 0) Debug.LogWarning("Jump force is zero. Cannot jump");
         if(ground_check.is_grounded) y_velocity = jump_force;
     }
-   public void MakeStep()
+   public void MakeStep(Vector3 direction)
     {
         if (move_speed == 0) Debug.LogWarning("Move speed is zero. Cannot run");
-        hitbox.Move(Camera.main.transform.forward * Time.deltaTime * move_speed); 
+        hitbox.Move(direction * Time.deltaTime * move_speed); 
     }
     // Start is called before the first frame update
   
@@ -62,7 +62,7 @@ public class CCMovementSystem : MonoBehaviour
         
         
         ApplyGravity();
-      //  RecenterHitboxByHeadTrackable();
+    
     }
 
 }

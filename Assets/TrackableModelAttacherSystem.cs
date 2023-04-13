@@ -6,6 +6,7 @@ using UnityEngine.TextCore.Text;
 public class TrackableModelAttacherSystem : MonoBehaviour
 {
 
+    public PlayerSystem master_system;
 
     public CharacterAvatarSystem character_avatar_system;
     public TrackablesLibrary trackables_library;
