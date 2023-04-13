@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterRespawn : MonoBehaviour
+public class CharacterRespawnSystem : MonoBehaviour
 {
     public Transform respawn_object;
     public Transform character_object;

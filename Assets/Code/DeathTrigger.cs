@@ -10,7 +10,7 @@ public class DeathTrigger : MonoBehaviour
     {
         if(touched_collider.gameObject.name == "Respawn System")
         {
-            touched_collider.gameObject.GetComponent<CharacterRespawn>().Respawn();
+            touched_collider.gameObject.GetComponent<CharacterRespawnSystem>().Respawn();
         }
     }
 
