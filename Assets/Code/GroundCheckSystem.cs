@@ -31,7 +31,7 @@ public class GroundCheckSystem : MonoBehaviour
         if (is_grounded) 
         {
             hit_point.position = hit_info.point;
-            Debug.Log("Hited " + hit_info.collider.name);
+         //   Debug.Log("Hited " + hit_info.collider.name);
         }
     }
      

@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Proto/ProtoLevel1.unity
     guid: 73379aef931752647bcf981141d16af6
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: c22a63171d06f644fa39c9e94d2a7cf4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d1a9dd58bec09354d9760cd3e5b3e3b2, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 661aadee1556fe143a35b83e9f30c462, type: 2}
