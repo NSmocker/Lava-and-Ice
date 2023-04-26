@@ -22,14 +22,14 @@ public class GrabSystem : MonoBehaviour
         if (other.tag == "ForGrab") 
         {
             hovered = other.gameObject;
-            print("Hover on" + other.name);
+           // print("Hover on" + other.name);
         }    
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "ForGrab")
         {
-            print("Exit from" + other.name);
+           // print("Exit from" + other.name);
             if (hovered == other.gameObject) hovered = null;
         }
     }
@@ -43,6 +43,7 @@ public class GrabSystem : MonoBehaviour
             {
                 grabed_item = hovered;
                 grabed_item.AddComponent(typeof(FixedJoint));
+                grabed_item.GetComponent<Rigidbody>().isKinematic = false;
                 var joint = grabed_item.GetComponent<FixedJoint>();
                 joint.connectedBody = GetComponent<Rigidbody>();
 

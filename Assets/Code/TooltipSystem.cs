@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TooltipSystem : MonoBehaviour
 {
-    SubtitlesSystem subtitles_system;
+   public SubtitlesSystem subtitles_system;
     public string tooltip_text;
     
 
