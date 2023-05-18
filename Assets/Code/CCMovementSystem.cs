@@ -34,11 +34,13 @@ public class CCMovementSystem : MonoBehaviour
         y_velocity -= y_gravity * Time.deltaTime;
         hitbox.Move(new Vector3(0,y_velocity*y_velocity_multipliyer,0));
     }
+
    public void MakeJump() 
     {
         if (jump_force == 0) Debug.LogWarning("Jump force is zero. Cannot jump");
         if(ground_check.is_grounded) y_velocity = jump_force;
     }
+    
    public void MakeStep(Vector3 direction)
     {
         if (move_speed == 0) Debug.LogWarning("Move speed is zero. Cannot run");
