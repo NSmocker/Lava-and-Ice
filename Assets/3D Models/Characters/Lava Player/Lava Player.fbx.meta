@@ -3,7 +3,17 @@ guid: 3253e959a3bb0c243bde5b9c7589a000
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhysicalMaterial
+    second: {fileID: 2100000, guid: 50aa4b11d9658844290958737e82c9f4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockDiffuse
+    second: {fileID: 2800000, guid: 8a082c7976fbf054a8cc07cb8df54042, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
