@@ -8,10 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Grash#1
-  m_Shader: {fileID: 4800000, guid: 13dc7e0dc3176cc4b920258a2c59faea, type: 3}
+  m_Shader: {fileID: 14002, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _WINDQUALITY_NONE
   m_InvalidKeywords:
   - ENUM_25859456_DESABLE
   m_LightmapFlags: 4
@@ -52,8 +53,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
+    - _ExtraTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 198a2f0913da0f64aaba314a35608092, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -65,6 +70,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SubsurfaceTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -88,6 +97,8 @@ Material:
     - Vector1_75A3C10A: 1.49
     - Vector1_B36D591C: 0.18
     - Vector1_CCE6D7D9: 0.54
+    - _BillboardKwToggle: 0
+    - _BillboardShadowFade: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -95,8 +106,9 @@ Material:
     - _Float0: 0.5
     - _Frecuensy: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
+    - _HueVariationKwToggle: 0
     - _Intensity: 0.369
     - _Intensity1: 0
     - _LeavesScale: 0
@@ -105,6 +117,7 @@ Material:
     - _Mode: 0
     - _NoiseScale: 3.38
     - _NoiseScale1: 5
+    - _NormalMapKwToggle: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Scale: 0.05
@@ -115,6 +128,8 @@ Material:
     - _SrcBlend: 1
     - _Strength: 0.64
     - _Strength1: 0
+    - _SubsurfaceIndirect: 0.25
+    - _SubsurfaceKwToggle: 0
     - _TimeScale: 4
     - _TransAmbient: 0.167
     - _TransDirect: 0.547
@@ -124,7 +139,9 @@ Material:
     - _Translucency: 13.6
     - _Translucent: 1
     - _Translucent1: 1
+    - _TwoSided: 0
     - _UVSec: 0
+    - _WindQuality: 0
     - _ZWrite: 1
     - __dirty: 0
     - _time: 5.63
@@ -134,7 +151,9 @@ Material:
     - Color_D1AD6A17: {r: 1, g: 1, b: 1, a: 0}
     - Vector2_DA8EBF00: {r: 1, g: 1, b: 0, a: 0}
     - Vector2_F8D695CF: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.58836484, g: 1, b: 0.11792451, a: 1}
+    - _Color: {r: 0.52829236, g: 0.8301887, b: 0.18326804, a: 1}
     - _Color1: {r: 0.38431373, g: 0.98039216, b: 0.16078432, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
