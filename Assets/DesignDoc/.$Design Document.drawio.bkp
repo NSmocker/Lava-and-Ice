@@ -1,14 +1,121 @@
-<mxfile host="app.diagrams.net" modified="2023-03-30T11:54:44.422Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="rQTwBZXYu7QehGeiPr9U" version="21.1.2" type="device" pages="2">
-  <diagram name="Resources" id="j7ocj-R6yFDsZnvFDcwh">
-    <mxGraphModel dx="794" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="Electron" modified="2023-06-14T10:01:55.627Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.3.7 Chrome/112.0.5615.204 Electron/24.5.0 Safari/537.36" etag="5euQZ7B_Bqr77h3GwvtS" version="21.3.7" type="device" pages="3">
+  <diagram name="Progress Log" id="j7ocj-R6yFDsZnvFDcwh">
+    <mxGraphModel dx="2046" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="UdUgcrhL-oT8AhT05if--1" value="To Do" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--2" value="In Progress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--4" value="Done" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="1060" as="sourcePoint" />
+            <mxPoint x="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="1070" as="sourcePoint" />
+            <mxPoint x="558" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="820" y="120" as="sourcePoint" />
+            <mxPoint y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--8" value="Зробити персонажа Кролик Райден" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--9" value="Зробити персонажа Кітсуне" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="227" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--10" value="3Дшнику" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--11" value="Програмісту" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--12" value="Дизайнеру рівня" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UdUgcrhL-oT8AhT05if--14" value="Проаналізувати рівні з гри Spyro:Ripto Rage. Визначити закономірності які роблять шлях від спавна до кінцевої точки рівня цікавим. Розписати по пунктах результати аналізу. В розділі &quot;Level Design Rules&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="10" y="300" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EiisvokGFB4qodK26Tyu-1" value="Запрограмувати механіку, повільного падіння коли гравітація залежить від відстані між руками. &quot;Пригає швидко, падає повільно.&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="30" y="430" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EiisvokGFB4qodK26Tyu-2" value="Додати можливість керування кнопками WASD та розворота тіла мишкою. (Для подальшого порта на інші платформи)." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="30" y="600" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EiisvokGFB4qodK26Tyu-3" value="Додати можливість підключатись до хоста за допомогою кода кімнати" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="31" y="767" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EiisvokGFB4qodK26Tyu-4" value="Дизайнеру Лора" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-179" y="319" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EiisvokGFB4qodK26Tyu-5" value="Розписати сюжет першої арки рівнів&amp;nbsp;(Стиль бамбук і кролики самураї)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="30" y="940" width="180" height="150" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="EdvGzktpSthJpCxaeCqI" name="Lore">
-    <mxGraphModel dx="794" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1036" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nreBZwVnpy1KQheb9B9o-1" value="Опис гри&lt;br&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-3" value="Основна концепція - взаємодія двох людей які грають в цю гру. Приклад гри &quot;Вогонь і Вода&quot;. Перед гравцями стоїть ціль, дійти до кінця рівня.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="15" y="50" width="770" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-4" value="Історія. Було магічне дзеркало, яке оберігало спокій на &quot;далеких землях&quot;. Але з&#39;явився орк, який вирішив захопити землі. Магічне дзеркало призвало дух льоду і лави для того щоб вони допомогли перемогти злого Орка. Але для того щоб потрапити до орка, потрібно два предмета з різних світів щоб у дзеркала були сили перенести дузів лави і льоду до орка." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="20" y="65" width="780" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-5" value="Механіки" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="375" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-6" value="&lt;ol&gt;&lt;li&gt;Два основних персонажа льодяний дух та лавовий дух.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Керування персонажа в стилі платформера, але від першої особи. Для руху персонажа - рух руками. Для прижка - прижок в реалі.&lt;/li&gt;&lt;li&gt;Телефон персонажа (головний інтерфейс. Там можна побачити кількість кристаликів і інші показники).&lt;/li&gt;&lt;li&gt;Збір кристаликів. Кристалики можна подивитись на телефоні персонажа. (в кожного духа свій колір кристалика, кристалик іншого кольору підібрати не можна). Кристалики необхідні щоб відкрити портал.&lt;/li&gt;&lt;li&gt;Кнопки та ричаги. На рівні будуть кнопки та ричаги з якими можна взаємодіяти. Кнопка або ричаг відкриває додаткову зону на рівні. Коли на рівні відкривається нова зона, перед персонажем з&#39;являється телефон, де показується місце нової зони.&lt;/li&gt;&lt;li&gt;Фізичні об&#39;єкти для взаємодії. На рівні будуть розкидані каміння, яблука, дошки, коробки, бочки. Об&#39;єкти можна брати у руки та кидати. Різні об&#39;єкти мають різну масу.&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="480" width="770" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-8" value="Рівні" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="368" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-10" value="Основна тема, природа і рослинність. Рівень має форму паралельних ліній та призначені ознайомити гравця з механікою гри. Де персонажі вогню та води можуть бачити один одного. Земля представляє собою квадратні острови з трав&#39;яним покровом. На рівні розставлені кристалики, коробки та каміння. В кінці рівня стоять портали в світ вулканів, та в світ льодовиків.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="16" y="830" width="784" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-11" value="Рівень 1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="156" y="800" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-12" value="ОПИС" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="16" y="830" width="78" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-14" value="Журчання водички під островом. Чірікання пташок. Легенький вітерець.&amp;nbsp; Шелест дерев." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="16" y="995" width="784" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="nreBZwVnpy1KQheb9B9o-15" value="Звуки" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="16" y="995" width="78" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="On_E6QPoKyoc6UgJE12L-1" value="Сюжет" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="On_E6QPoKyoc6UgJE12L-2" value="Давним давно, в далеких землях, був добрий чарівник Зальберт, який наглядав за світом, де він жив, і беріг в ньому мир і спокій. Чарівник створив дзеркало яке допомагало йому. Але одного дня, чарівник зчез, чого і чекав злий орк Пугрімар.&amp;nbsp; Він зібрав свою армію, і захопив частину далеких земель. І як вершину свого володарювання він хотів підкорити собі магічне дзеркало. Але дзеркало призвало духів льоду і лави собі на допомогу. І тепер їм потрібно відзнайти магічні артефакти і зійтись у бою зі злим орком Пугрімаром." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="851" y="65" width="780" height="125" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1cOyIFm6DYKvIst5hkES" name="Level Design Rules">
+    <mxGraphModel dx="1036" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
