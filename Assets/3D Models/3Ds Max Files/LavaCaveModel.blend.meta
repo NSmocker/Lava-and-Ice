@@ -3,7 +3,32 @@ guid: a2b644d5ba0696242862d0c74c4e982c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn
+    second: {fileID: 2100000, guid: d5473e29be14413419bda5d87e08961b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lava_Wall
+    second: {fileID: 2100000, guid: e3dfb2169fcc7a443b2de92dadf20650, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Lava02
+    second: {fileID: 2100000, guid: 9a526ccb9696d6545b3991e93bfb18bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rocks_Volcanic_C
+    second: {fileID: 2100000, guid: 3f532fd3bc3865a47b05fffc3fe2b8f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodPlank
+    second: {fileID: 2100000, guid: d1308064540b76a488431b360cee6b89, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +62,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
@@ -48,7 +73,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
