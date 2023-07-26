@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Production/Hub1.unity
-    guid: ef48691448a93cc4886e30b95d169b75
+    path: Assets/Scenes/Multiplayer Test/Lobby.unity
+    guid: 61d09e751bda68d4cb863849b7964309
   - enabled: 1
-    path: Assets/Scenes/Production/Loading.unity
-    guid: 5ebabbe926682204685c724f8756ce2c
-  - enabled: 1
-    path: Assets/Scenes/Proto/ProtoLevel1.unity
-    guid: 73379aef931752647bcf981141d16af6
+    path: Assets/Scenes/Multiplayer Test/MultiplayerRoom.unity
+    guid: 34ad721b81df08d4bae2010371ff8e94
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c22a63171d06f644fa39c9e94d2a7cf4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d1a9dd58bec09354d9760cd3e5b3e3b2, type: 2}
