@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Ground
+    second: {fileID: 2100000, guid: 98217c44f871d944c9c6b55088bf19cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Lava_Wall
     second: {fileID: 2100000, guid: e3dfb2169fcc7a443b2de92dadf20650, type: 2}
   - first:
@@ -22,8 +27,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Obsidian
+    second: {fileID: 2100000, guid: 7878962a87dcabd4882e7737955392a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Rocks_Volcanic_C
     second: {fileID: 2100000, guid: 3f532fd3bc3865a47b05fffc3fe2b8f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Temp_Gold
+    second: {fileID: 2100000, guid: 4f5682d4082797b4f90f372346b7ee39, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
