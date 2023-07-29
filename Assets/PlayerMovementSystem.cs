@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovementSystem : MonoBehaviour
 {
 
+    public ClassicLocomotion classic_locomotion;
     public HandsLocomotion hand_locomotion;
     public DirectionPointerFromCamera direction_pointer;
     public CharacterController controller_link;
@@ -36,8 +37,15 @@ public class PlayerMovementSystem : MonoBehaviour
         if(move_by_hands)
         {
             Vector3 move_vector = direction_pointer.transform.forward * move_speed*Time.deltaTime *  (hand_locomotion.left_hand_velocity + hand_locomotion.right_hand_velocity);
-            
+            controller_link.Move(move_vector);
         }
+        else
+        {
+            Vector3 classic_device_vector = new Vector3(classic_locomotion.keyboard_and_analog.x,0,classic_locomotion.keyboard_and_analog.y);
+            Vector3 move_vector = direction_pointer.transform.TransformDirection(classic_device_vector) * move_speed*Time.deltaTime;
+            controller_link.Move(move_vector);
+        }
+        
     }
 
     // Start is called before the first frame update
@@ -49,7 +57,8 @@ public class PlayerMovementSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateHitboxInfo();
+       if(move_by_hands) UpdateHitboxInfo();
         CalculateGravity();
+        MoveCharacter();
     }
 }

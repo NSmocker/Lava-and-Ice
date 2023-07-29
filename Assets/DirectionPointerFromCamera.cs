@@ -17,5 +17,8 @@ public class DirectionPointerFromCamera : MonoBehaviour
     {
         custom_angles = Camera.main.transform.eulerAngles;
         custom_angles.z = 0;
+        custom_angles.x = 0;
+        
+        transform.eulerAngles = custom_angles;
     }
 }

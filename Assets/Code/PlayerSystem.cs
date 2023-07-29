@@ -19,7 +19,7 @@ public class PlayerSystem : MonoBehaviour
         player_xr_locomotion_system.master_system = this;
         trackables_library.master_system = this;
         model_attacher_system.master_system = this;
-        player_classic_locomotion_system.master_system = this; 
+      //  player_classic_locomotion_system.master_system = this; 
     }
     // Start is called before the first frame update
     void Start()

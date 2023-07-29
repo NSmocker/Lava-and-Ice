@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClassicLocomotion : MonoBehaviour
 {
-    public PlayerSystem master_system;
+    
     public Vector2 keyboard_and_analog;
     public Vector2 mouse_and_analog;
     // Start is called before the first frame update

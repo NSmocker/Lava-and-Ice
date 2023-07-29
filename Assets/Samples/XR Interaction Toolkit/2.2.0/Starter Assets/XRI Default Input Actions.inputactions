@@ -88,6 +88,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "CanGo",
+                    "type": "Value",
+                    "id": "dba70ddf-b22b-4806-90bf-975fe6fc30ed",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -198,6 +207,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c60978cb-9a68-4322-b835-2948eb06c0d3",
+                    "path": "<XRController>{LefttHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CanGo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -8,7 +8,7 @@ public class VRButton : MonoBehaviour
     void OnTriggerEnter(Collider info)
     {
        
-        if(info.gameObject.name=="Pointer")
+        if(info.gameObject.name=="Pointer" || info.gameObject.tag =="MainCamera" )
         {   
             on_button_touch.Invoke();
         }
