@@ -8,9 +8,11 @@ public class CheckPoint : MonoBehaviour
     {
         if(touched_collider.gameObject.name == "Respawn System")
         {
+            /*
             var respawn_link = touched_collider.gameObject.
             GetComponent<CharacterRespawnSystem>();
             respawn_link.ChangeRespawnObject(this.transform);
+            */
         }
     }
     // Start is called before the first frame update
