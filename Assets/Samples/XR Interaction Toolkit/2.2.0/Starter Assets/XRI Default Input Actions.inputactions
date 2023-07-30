@@ -91,12 +91,12 @@
                 },
                 {
                     "name": "CanGo",
-                    "type": "Value",
-                    "id": "dba70ddf-b22b-4806-90bf-975fe6fc30ed",
-                    "expectedControlType": "Double",
+                    "type": "Button",
+                    "id": "edfe555d-65be-49b2-a2f5-1b78d5a84a56",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -212,8 +212,8 @@
                 },
                 {
                     "name": "",
-                    "id": "c60978cb-9a68-4322-b835-2948eb06c0d3",
-                    "path": "<XRController>{LefttHand}/gripPressed",
+                    "id": "48116909-ac4e-4039-b8a4-e71f052f1042",
+                    "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -567,7 +567,7 @@
                     "name": "Position",
                     "type": "Value",
                     "id": "c4990d70-7b8a-4ce1-b03c-da86716b8352",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -600,18 +600,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "CanGo",
+                    "name": "Grab",
                     "type": "Value",
-                    "id": "bf2c577c-ca02-4a39-8e32-ae5f484f86c9",
-                    "expectedControlType": "Double",
+                    "id": "c7b898b2-b7c7-451b-93d7-233c81ec8787",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Grab",
+                    "name": "CanGo",
                     "type": "Button",
-                    "id": "c7b898b2-b7c7-451b-93d7-233c81ec8787",
+                    "id": "fa5543af-e176-44b6-8db1-efb67f5be10d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -731,23 +731,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f3feaf2b-0c0b-4aac-9db2-fa43e591f28c",
-                    "path": "<XRController>{RightHand}/gripPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CanGo",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "93869045-c614-4bb9-9d56-df01c742a2fc",
                     "path": "<XRController>{RightHand}/triggerButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5233ca65-8b1a-44d4-898f-7a5f62517cee",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CanGo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

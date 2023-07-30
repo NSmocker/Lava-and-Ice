@@ -11,7 +11,7 @@ public class PlayerMovementSystem : MonoBehaviour
     public DirectionPointerFromCamera direction_pointer;
     public CharacterController controller_link;
     public Transform head;
-    public bool move_by_hands;
+    
     public float move_speed;
     public float custom_gravity_y;
     public float custom_gravity_scaler=1f;
@@ -34,17 +34,16 @@ public class PlayerMovementSystem : MonoBehaviour
     }
     void MoveCharacter()
     {
-        if(move_by_hands)
-        {
-            Vector3 move_vector = direction_pointer.transform.forward * move_speed*Time.deltaTime *  (hand_locomotion.left_hand_velocity + hand_locomotion.right_hand_velocity);
-            controller_link.Move(move_vector);
-        }
-        else
-        {
-            Vector3 classic_device_vector = new Vector3(classic_locomotion.keyboard_and_analog.x,0,classic_locomotion.keyboard_and_analog.y);
-            Vector3 move_vector = direction_pointer.transform.TransformDirection(classic_device_vector) * move_speed*Time.deltaTime;
-            controller_link.Move(move_vector);
-        }
+        
+        
+        Vector3 hand_move_vector = direction_pointer.transform.forward * move_speed*Time.deltaTime *  (hand_locomotion.left_hand_velocity + hand_locomotion.right_hand_velocity);
+        controller_link.Move(hand_move_vector);
+        
+       
+        Vector3 classic_device_vector = new Vector3(classic_locomotion.keyboard_and_analog.x,0,classic_locomotion.keyboard_and_analog.y);
+        Vector3 move_vector = direction_pointer.transform.TransformDirection(classic_device_vector) * move_speed*Time.deltaTime;
+        controller_link.Move(move_vector);
+        
         
     }
 
@@ -57,7 +56,7 @@ public class PlayerMovementSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(move_by_hands) UpdateHitboxInfo();
+        UpdateHitboxInfo();
         CalculateGravity();
         MoveCharacter();
     }

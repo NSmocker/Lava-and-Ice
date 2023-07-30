@@ -8,7 +8,7 @@ public class HandsLocomotion : MonoBehaviour
 
     public InputActionReference right_hand_can_go;
     public InputActionReference left_hand_can_go;
-    bool read_right_hand;
+     bool read_left_hand,read_right_hand;
     
     public float right_hand_velocity, left_hand_velocity;
     Vector3 prev_right_hand_position,prev_left_hand_position;
@@ -17,7 +17,8 @@ public class HandsLocomotion : MonoBehaviour
 
     void CalculateVelocity()
     {
-        if(right_hand_can_go.action.ReadValue<float>() == 1)
+
+        if(right_hand_can_go.action.IsPressed())
         { 
             right_hand_velocity = ((right_hand.transform.position - prev_right_hand_position).magnitude) / Time.deltaTime*0.1f;
             prev_right_hand_position = right_hand.transform.position;
@@ -25,10 +26,11 @@ public class HandsLocomotion : MonoBehaviour
         else
         {
             right_hand_velocity=0;
+            prev_right_hand_position =  right_hand.transform.position;
         } 
 
 
-        if(left_hand_can_go.action.ReadValue<float>() == 1)
+        if(left_hand_can_go.action.IsPressed())
         {
             left_hand_velocity = ((left_hand.transform.position - prev_left_hand_position).magnitude) / Time.deltaTime*0.1f;
             prev_left_hand_position = left_hand.transform.position;
@@ -36,11 +38,10 @@ public class HandsLocomotion : MonoBehaviour
         else
         {
             left_hand_velocity=0;
+            prev_left_hand_position = left_hand.transform.position;
         } 
 
-     
 
-     
 
     }
     // Start is called before the first frame update

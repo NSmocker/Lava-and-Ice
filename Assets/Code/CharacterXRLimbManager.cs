@@ -13,6 +13,7 @@ public class CharacterXRLimbManager : NetworkBehaviour
     public Camera main_camera;
     public ClassicLocomotion  classic_locomotion;
     public PlayerMovementSystem movement_system;
+     XRDeviceInitializer xr_device;
     // Start is called before the first frame update
 
 
@@ -25,10 +26,10 @@ public class CharacterXRLimbManager : NetworkBehaviour
 
     public void UseXR()
     {
-       //head.enabled = true;
-       // left_hand.enabled = true;
-       // right_hand.enabled = true;
-       // hand_locomotion.enabled= true;
+        head.enabled = true;
+        left_hand.enabled = true;
+        right_hand.enabled = true;
+        hand_locomotion.enabled= true;
 
     }
 
@@ -39,16 +40,16 @@ public class CharacterXRLimbManager : NetworkBehaviour
         movement_system.enabled= true;
         controller_link.enabled = true;
     }
-    public void DetachPlayer()
-    {
-        main_camera.enabled = false;
-        movement_system.enabled= false;
-    }
+    
     
     void Start()
-    {
-       
-        if(IsOwner )AttachPlayer();
+    {   xr_device = GameObject.Find("XR Device Initializer").GetComponent<XRDeviceInitializer>();
+        DontDestroyOnLoad(gameObject);
+        if(IsOwner )
+        {
+            AttachPlayer();
+            if(xr_device.OnXR){UseXR();}
+        }
     }
 
     // Update is called once per frame

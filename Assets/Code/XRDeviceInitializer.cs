@@ -37,7 +37,9 @@ public class XRDeviceInitializer : MonoBehaviour
 
     public void InitXR()
     {
-         StartCoroutine(StartXR());
+        DontDestroyOnLoad(gameObject);
+        StartCoroutine(StartXR());
+        OnXR = true;
     }
     public void ExitXR()
     {
