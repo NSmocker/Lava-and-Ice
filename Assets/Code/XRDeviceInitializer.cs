@@ -45,10 +45,16 @@ public class XRDeviceInitializer : MonoBehaviour
     {
         StopXR();
     }
-    
+    void Start()
+    {
+        if( XRGeneralSettings.Instance.Manager.isInitializationComplete) {OnXR =true;}
+    }
     void Update()
     {
        
-
+        if(Input.GetKeyDown(KeyCode.Space)) 
+        {
+            StopXR();
+        }
     }
 }
